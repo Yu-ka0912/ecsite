@@ -28,4 +28,4 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 		this.session = session;
 	}
 }
-//BuyItemCompleteDAOクラス作成してからエラー解消する
+//BuyItemCompleteDAOクラス作成してからエラー解消予定
