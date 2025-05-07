@@ -39,7 +39,7 @@
 		height: 80px;
 		background-color: black;
 	}
-	#mian{
+	#main{
 		width:100%;
 		height:500px;
 		text-align: center;
