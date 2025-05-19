@@ -59,6 +59,12 @@
 	</script>
 </head>
 <body>
+	<script>
+		function submitAction(actionName) {
+			document.forms[0].action = actionName;
+			document.forms[0].submit();
+		}
+	</script>
 	<div id="header">
 		<div id="pr"></div>
 	</div>
