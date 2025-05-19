@@ -5,12 +5,13 @@
 <!-- Strutsの詳細設定 -->
 <struts>
 	<constant name="struts.devMode" value="true" />
-	<package name="com.diworksdev.ecsite.action" namespace="/" extends="struts-default">
+	<package name="com.diworksdev.ecsite.action" namespace="/"
+		extends="struts-default">
 		<!-- GoHomeAction -->
-		<!-- <action name="GoHomeAction" class="com.diworksdev.ecsite.action.GoHomeAction"
+		<action name="GoHomeAction" class="com.diworksdev.ecsite.action.GoHomeAction"
 			method="execute">
 			<result name="success">home.jsp</result>
-		</action> -->
+		</action>
 
 		<!-- HomeAction -->
 		<action name="HomeAction" class="com.diworksdev.ecsite.action.HomeAction"
@@ -20,44 +21,49 @@
 		</action>
 
 		<!-- LoginAction -->
-		<!-- <action name="LoginAction" class="com.diworksdev.ecsite.action.LoginAction"
+		<action name="LoginAction" class="com.diworksdev.ecsite.action.LoginAction"
 			method="execute">
 			<result name="success">buyItem.jsp</result>
 			<result name="error">login.jsp</result>
-		</action> -->
+		</action>
 		<!-- UserCreateAction -->
-		<!-- <action name="UserCreateConfirmAction"
+		<action name="UserCreateAction" class="com.diworksdev.ecsite.action.UserCreateAction"
+			method="execute">
+			<result name="success">userCreate.jsp</result>
+		</action>
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction"
 			class="com.diworksdev.ecsite.action.UserCreateConfirmAction" method="execute">
 			<result name="success">userCreateConfirm.jsp</result>
 			<result name="error">userCreate.jsp</result>
-		</action> -->
+		</action>
 		<!-- UserCreateCompleteAction -->
-		<!-- <action name="UserCreateCompleteAction"
+		<action name="UserCreateCompleteAction"
 			class="com.diworksdev.ecsite.action.UserCreateCompleteAction" method="execute">
 			<result name="success">userCreateComplete.jsp</result>
-		</action> -->
+		</action>
 		<!-- BuyItemAction -->
-		<!-- <action name="BuyItemAction" class="com.diworksdev.ecsite.action.BuyItemAction"
+		<action name="BuyItemAction" class="com.diworksdev.ecsite.action.BuyItemAction"
 			method="execute">
 			<result name="success">buyItemConfirm.jsp</result>
 			<result name="error">buyItem.jsp</result>
-		</action> -->
+		</action>
 		<!-- BuyItemConfirmAction -->
-		<!-- <action name="BuyItemConfirmAction"
+		<action name="BuyItemConfirmAction"
 			class="com.diworksdev.ecsite.action.BuyItemConfirmAction" method="execute">
 			<result name="success">buyItemComplete.jsp</result>
 			<result name="back">buyItem.jsp</result>
-		</action> -->
+		</action>
 		<!-- MyPageAction -->
-		<!-- <action name="MyPageAction" class="com.diworksdev.ecsite.action.MyPageAction"
+		<action name="MyPageAction" class="com.diworksdev.ecsite.action.MyPageAction"
 			method="execute">
 			<result name="success">myPage.jsp</result>
 			<result name="error">home.jsp</result>
-		</action> -->
+		</action>
 		<!-- LogoutAction -->
-		<!-- <action name="LogoutAction" class="com.diworksdev.ecsite.action.LogoutAction"
+		<action name="LogoutAction" class="com.diworksdev.ecsite.action.LogoutAction"
 			method="execute">
 			<result name="success">home.jsp</result>
-		</action> -->
+		</action>
 	</package>
 </struts>
